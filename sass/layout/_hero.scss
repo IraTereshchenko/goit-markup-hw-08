@@ -1,4 +1,111 @@
 .hero {
+  min-height: 400px;
+  background-color: $background-footer-hero;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero-bg/hero-bg-mobile.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 2x и 0 - 767px */
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero-bg/hero-bg-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero-bg/hero-bg-tablet.jpg');
+  }
+}
+
+/* 2x и 768+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero-bg/hero-bg-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero-bg/hero-bg-desktop.jpg');
+  }
+}
+
+/* 2x и 1200+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero-bg/hero-bg-desktop@2x.jpg');
+  }
+}
+.hero__container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero__title {
+  margin: 0 auto 30px;
+  width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primary-white;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    margin: 0 auto 30px;
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+/*.hero {
   max-width: 1600px;
   height: 600px;
   background-color: $background-footer-hero;
@@ -10,7 +117,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/heroimg.jpg');
-  background-size: cover;
+ 
 
   &__container {
     margin-left: auto;
@@ -26,4 +133,4 @@
     text-transform: uppercase;
     color: $primary-white;
   }
-}
+}*/
