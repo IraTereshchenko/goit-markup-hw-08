@@ -1,6 +1,11 @@
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+/*@media screen and {
+}*/
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 .social-list__link {
   display: flex;
@@ -29,3 +34,7 @@
     fill: $primary-white;
   }
 }
+/*.social-list {
+  display: flex;
+  justify-content: space-between;
+}*/
