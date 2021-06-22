@@ -132,9 +132,11 @@
     fill: $primary-white;
   }
 }
-/*.sign-up__form {
-  margin-left: 93px;
-}*/
+.sign-up__form {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
 
 .sign-up__text {
   /*display: flex;*/
@@ -143,6 +145,12 @@
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.sign-up__box {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .sign-up__input {
   width: 100%;
@@ -159,7 +167,7 @@
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
-    width: 358;
+    width: 358px;
     margin-right: 12px;
     margin-bottom: 0;
   }
@@ -171,7 +179,9 @@
 }
 
 .sign-up__btn {
-  display: inline-flex;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
   position: relative;
   min-width: 200px;
   height: 50px;
@@ -191,6 +201,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-left: 12px;
+    display: flex;
   }
 
   &:hover,
