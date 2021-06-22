@@ -16,43 +16,91 @@
 <body>
     <!--Заголовок-->
     <!--Верхняя линия-->
-    <header class="header">
-        <div class="container header__container">
-            <nav class="navigation">
-                <a class="logo link" href="./index.html">
-                    <span class="logo__first">Web</span>Studio
-                </a>
-    
-                <ul class="menu list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="index.html">Студия</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link current" href="portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-    
-    
-            <ul class="contact contact__list list">
-                <li class="contact__item">
-                    <a class="contact__link link" href="mailto:info@devstudio.com">
-                        <svg class="contact__mail">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a>
+<header class="header">
+    <div class="container header__container">
+        <nav class="navigation">
+            <a class="logo link" href="./index.html">
+                <span class="logo__first">Web</span>Studio
+            </a>
+
+            <ul class="menu list">
+                <li class="menu__item">
+                    <a class="menu__link current" href="index.html">Студия</a>
                 </li>
-                <li class="contact__item">
-                    <a class="contact__link link" href="tel:+380961111111">
-                        <svg class="contact__tel">
-                            <use href="./images/sprite.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button" class="header__mobile-menu-btn" data-menu-button>
+            <svg class="header__mobile-menu-icon">
+                <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+        </button>
+
+
+        <ul class="contact contact__list list">
+            <li class="contact__item">
+                <a class="contact-link link" href="mailto:info@devstudio.com">
+                    <svg class="contact__mail">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a>
+            </li>
+            <li class="contact__item">
+                <a class="contact-link link" href="tel:+380961111111">
+                    <svg class="contact__tel">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__nav list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link current" href="index.html">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__contact list">
+                <li class="mobile-menu__item-contact">
+                    <a class="mobile-menu__link-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__item-contact">
+                    <a class="mobile-menu__link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__social list">
+                <li class="mobile-menu__item-social">
+                    <a class="mobile-menu__link-social link" href>Instagram</a>
+                </li>
+                <li class="mobile-menu__item-social">
+                    <a class="mobile-menu__link-social link" href>Twitter</a>
+                </li>
+                <li class="mobile-menu__item-social">
+                    <a class="mobile-menu__link-social link" href>Facebook</a>
+                </li>
+                <li class="mobile-menu__item-social">
+                    <a class="mobile-menu__link-social link" href>LinkedIn</a>
                 </li>
             </ul>
         </div>
-    </header>
+    </div>
+
+</header>
 
     <!-- Навигация Портфолио-->
     <main>
@@ -213,80 +261,81 @@
 
 <!--Подвал-->
 <!--Подвал-->
+<!--Подвал-->
 <footer class="footer">
     <div class="footer__container container">
         <div class="footer__box">
+            <div class="contacts">
+                <a class="contacts__logo logo link" href="./index.html">Web<span
+                        class="contacts__logo-footer logo-secondary-link">Studio</span>
+                </a>
 
-            <a class="logo link" href="./index.html">
-                <span class="logo__first">Web</span><span class="logo-secondary-link">Studio</span>
-            </a>
-
-            <address class="footer__address">
-                <p class="footer__name">
-                    <a class="footer__map" href="https://goo.gl/maps/mj9vzz49X9CkKf8P8" target="_blank"
-                        rel="noopener noreferrer">г.
-                        Киев, пр-т Леси Украинки, 26</a>
-                </p>
-                <ul class="list">
-                    <li class="footer__item">
-                        <a class="footer__mail link" href="mailto:info@example.com">info@example.com</a>
+                <address class="address">
+                    <p class="address__name">
+                        <a class="address__map" href="https://goo.gl/maps/mj9vzz49X9CkKf8P8" target="_blank"
+                            rel="noopener noreferrer">г.
+                            Киев, пр-т Леси Украинки, 26</a>
+                    </p>
+                    <ul class="list">
+                        <li class="address__item">
+                            <a class="address__mail link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <!--Присоединяйтесь-->
+            <div class="join">
+                <p class="join__text">присоединяйтесь</p>
+                <ul class="join__list list">
+                    <li class="join__item">
+                        <a href="" class="join__link">
+                            <svg class="join__icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="footer__item">
-                        <a class="footer__tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="join__item">
+                        <a href="" class="join__link">
+                            <svg class="join__icon">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__item">
+                        <a href="" class="join__link">
+                            <svg class="join__icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__item">
+                        <a href="" class="join__link">
+                            <svg class="join__icon">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
-        </div>
-        <!--Присоединяйтесь-->
-        <div class="join">
-            <p class="join__text">присоединяйтесь</p>
-            <ul class="join__list list">
-                <li class="join__item">
-                    <a href="" class="join__link">
-                        <svg class="join__icon">
-                            <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="join__item">
-                    <a href="" class="join__link">
-                        <svg class="join__icon">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="join__item">
-                    <a href="" class="join__link">
-                        <svg class="join__icon">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="join__item">
-                    <a href="" class="join__link">
-                        <svg class="join__icon">
-                            <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        
+            </div>
         </div>
         <!--Подписаться-->
         <form action="#" class="sign-up__form">
-            <b class="sign-up__text">Подпишитесь на рассылку</b>
-            <label>
-                <input type="email" name="sign-up-email" class="sign-up__input" placeholder="E-mail" required>
-            </label>
-            <button type="submit" class="sign-up__btn">Подписаться
-                <svg class="sign-up__icon">
-                    <use href="./images/sprite.svg#icon-send"></use>
-                </svg></button>
+            <h3 class="sign-up__text">Подпишитесь на рассылку</h3>
+            <div class="sign-up__box">
+                <label>
+                    <input type="email" name="sign-up-email" class="sign-up__input" placeholder="E-mail" required>
+                </label>
+                <button type="submit" class="sign-up__btn">Подписаться
+                    <svg class="sign-up__icon">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                    </svg></button>
+            </div>
         </form>
-        </div>
-        
-
+    </div>
 </footer>
-
+<script src="./js/menu.js"></script>
 </body>
 </html>
