@@ -169,34 +169,53 @@
         </section>
        
         <!--Деятельность-->
-        <!--<section class="work section">
+        <section class="work section">
             <div class="container">
             <h2 class="work__title title">Чем мы занимаемся</h2>
             <ul class="work__list list">
                 <li class="work__item ">
-                    <img class="work__img" src="./images/action1.jpg" alt="руки человека пишут код на квавиатури" width="370"
-                        height="294">
+                    <picture>
+                        <source srcset="./images/action/action01/action01-desktop.webp 1x, ./images/action/action01/action01-desktop@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/action/action01/action01-desktop.jpg 1x, .images/action/action01/action01-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <img src="./images/action/action01/action01-desktop.jpg" alt="руки человека пишут код на квавиатури" class="work__img">
+                    </picture>
+                    
                        
                         <div class="work__card">
                         <p class="work__text">Десктопные приложения</p>
                         </div>
                     </li>
                 <li class="work__item ">
-                    <img class="work__img" src="./images/action2.jpg" alt="рука женщины держит телефон" width="370" height="294">
+                    <picture class="picture">
+                        <source srcset="./images/action/action02/action02-desktop.webp 1x, ./images/action/action02/action02-desktop@2x.webp 2x" media="(min-width: 1200px)"
+                            type="image/webp">
+                        <source srcset="./images/action/action02/action02-desktop.jpg 1x, ./images/action/action02/action02-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                        <img src="./images/action/action02/action02-desktop.jpg" alt="рука женщины держит телефон" class="work__img">
+                    </picture>
+                   
                 <div class="work__card">
                     <p class="work__text">Мобильные приложения</p>
                 </div>
                 </li>
-                <li class="work__item "><img class="work__img" src="./images/action3.jpg" alt="женщина держит планшет и выбирает цвет на планшете" width="370"
-                        height="294">
-                    
+                <li class="work__item ">
+                    <picture class="picture">
+                        <source
+                            srcset="./images/action/action03/action03-desktop.webp 1x, ./images/action/action03/action03-desktop@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source
+                            srcset="./images/action/action03/action03-desktop.jpg 1x, ./images/action/action03/action03-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <img src="./images/action/action03/action03-desktop.jpg" alt="женщина держит планшет и выбирает цвет на планшете" class="work__img">
+                    </picture>
                     <div class="work__card">
                         <p class="work__text">Дизайнерские решения</p>
                     </div>
                 </li>
             </ul>
         </div>
-        </section>-->
+        </section>
         <!--Команда-->
         <section class="team section">
             <div class="container">
@@ -521,6 +540,7 @@
     <!--Подписаться-->
     <form action="#"  class="sign-up__form">
         <h3 class="sign-up__text">Подпишитесь на рассылку</h3>
+        <div class="sign-up__box">
         <label>
         <input type="email" name="sign-up-email" class="sign-up__input" placeholder="E-mail" required>
         </label>
@@ -528,11 +548,12 @@
         <svg class="sign-up__icon">
             <use href="./images/sprite.svg#icon-send"></use>
         </svg></button>
+        </div>
     </form>
     </div>
     </footer>
     <!--Модально Окно-->
-    <!--<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal-close">
             <button type="button" class="modal-close__btn" data-modal-close>
                 <svg class="modal-close__icon">
@@ -541,47 +562,48 @@
             </button>
             <form action="#" method="GET" class="modal-form">
                 <p class="modal-form__head">Оставьте свои данные, мы вам перезвоним</p>
-                
+    
                 <label class="modal-form__field">
                     Имя
                     <span class="modal-form__wrapper">
-                    <input type="text" name="user-name" class="modal-form__input" minlength="2" required>
-                    <svg class="modal-form__icon">
-                        <use href="./images/sprite.svg#icon-person"></use>
-                    </svg>
+                        <input type="text" name="user-name" class="modal-form__input" minlength="2" required>
+                        <svg class="modal-form__icon">
+                            <use href="./images/sprite.svg#icon-person"></use>
+                        </svg>
                     </span>
                 </label>
                 <label class="modal-form__field">
                     Телефон
                     <span class="modal-form__wrapper">
-                    <input type="tel" name="user-phone" class="modal-form__input" required>
-                    <svg class="modal-form__icon">
-                        <use href="./images/sprite.svg#icon-phone"></use>
-                    </svg>
+                        <input type="tel" name="user-phone" class="modal-form__input" required>
+                        <svg class="modal-form__icon">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
                     </span>
                 </label>
                 <label class="modal-form__field">
                     Почта
                     <span class="modal-form-__wrapper">
-                    <input type="email" name="user-email" class="modal-form__input" required>
-                    <svg class="modal-form__icon">
-                        <use href="./images/sprite.svg#icon-email"></use>
-                    </svg>
+                        <input type="email" name="user-email" class="modal-form__input" required>
+                        <svg class="modal-form__icon">
+                            <use href="./images/sprite.svg#icon-email"></use>
+                        </svg>
                     </span>
                 </label>
                 <label class="modal-form__field">
                     Комментарий
                     <textarea name="user-message" class="modal-form__message" placeholder="Введите текст"></textarea>
                 </label>
-                <input type="checkbox" name="user-policy" class="modal-form__checkbox visually-hidden" id="checkbox-policy" required>
+                <input type="checkbox" name="user-policy" class="modal-form__checkbox visually-hidden" id="checkbox-policy"
+                    required>
                 <label for="checkbox-policy" class="modal-form__policy">Соглашаюсь с рассылкой и принимаю
                     <a class="modal-form__link" href="">Условия договора</a></label>
-                    <button type="submit" class="modal-form__btn">Отправить</button>
+                <button type="submit" class="modal-form__btn">Отправить</button>
             </form>
         </div>
-    </div>-->
+    </div>
     <script src="./js/menu.js"></script>
-  <!--<script src="./js/modal.js"></script>-->
+  <script src="./js/modal.js"></script>
 
 </body>
 
